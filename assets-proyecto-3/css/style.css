@@ -16,5 +16,9 @@ body{
     font-size: 1.6rem;
 }
 /* barra decorativa */
-
+.decoration__bar{
+    width: 100%;
+    min-height: 2.5rem;
+    background-color: var(--color-secundario);
+}
 /* estructura y layout */
