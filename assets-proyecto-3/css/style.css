@@ -138,15 +138,33 @@ body {
 }
 
 
-/* ******************************************* */
+/* estilos submenu */
 /* ******************************************* */
 /* ******************************************* */
 /* ******************************************* */
 
-.navbar__submenu {
-    display: none;
+.navbar__item:hover .navbar__submenu {
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms ease-in-out;
 }
-
+.navbar__item:hover .submenu__carousel{
+    display: block;
+}
+.navbar__submenu{
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    overflow: hidden;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: row;
+    
+}
 /* ******************************************* */
 /* ******************************************* */
 /* ******************************************* */
