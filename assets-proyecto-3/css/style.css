@@ -2,7 +2,7 @@
 :root {
     --color-primario: #fff;
     --color-secundario: #329153;
-
+--color-bg-navbar:#333946;
 }
 
 /* estilos generales */
@@ -53,47 +53,71 @@ body {
     min-width: 100%;
     padding: 2rem 0;
 }
-.header__img{
+
+.header__img {
     width: 17rem;
 }
 
 /* estilos navegación */
-.layout__nav{
+.layout__nav {
     grid-area: nav;
+    position: relative;
+    width: 100%;
 }
 
+.nav__navbar {
+    position: relative;
+    min-height: 5rem;
+    max-height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-primario);
+    background-color: var(--color-bg-navbar);
+}
+/* ******************************************* */
+/* ******************************************* */
+/* ******************************************* */
+/* ******************************************* */
+
+.navbar__submenu{
+    display: none;
+}
+/* */
 /* estilos marquesina */
-.layout__marquee{
+.layout__marquee {
     grid-area: marquee;
 }
 
 /* estilos slider */
-.layout_slider{
+.layout_slider {
     grid-area: slider;
 }
 
 /* estilos highlight */
 
-.layout__highlights{
+.layout__highlights {
     grid-area: high;
 }
 
 /* estilo videos */
-.layout__videos{
+.layout__videos {
     grid-area: video;
 }
 
 /* esilos carousel */
-.layout__carousel-game{
+.layout__carousel-game {
     grid-area: carousel;
 }
 
 /* estilos contenido main */
-.layout__main{
+.layout__main {
     grid-area: main;
 }
 
 /* estilos aside */
-.layout__aside{
-    grid-area:aside;
+.layout__aside {
+    grid-area: aside;
 }
