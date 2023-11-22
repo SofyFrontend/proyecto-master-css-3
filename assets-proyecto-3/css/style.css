@@ -4,10 +4,12 @@
 --color-secundario:#329153;
 
 }
+
 /* estilos generales */
 html{
     font-size: 10px;
 }
+
 body{
     background-color: var(--color-primario);
     width: 100%;
@@ -15,10 +17,29 @@ body{
     font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
 }
+
 /* barra decorativa */
+
 .decoration__bar{
     width: 100%;
     min-height: 2.5rem;
     background-color: var(--color-secundario);
 }
 /* estructura y layout */
+.layout{
+    display:grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "marquee marquee"
+    "slider slider"
+    "high high"
+    "video videos"
+    "carousel carousel"
+    "main aside"
+    ;
+    grid-template-columns: 70% 30%;
+    width: 55vw;
+    min-width: 100rem;
+    margin:0 auto;
+}
