@@ -82,10 +82,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+justify-content: flex-start;
 }
 .navbar__item {
-    padding: 1.5rem 0;
+    height: 5rem;
 }
 .navbar__item:hover {
     background-color: var(--color-secundario);
@@ -93,7 +93,7 @@ body {
 .navbar__link{
     font-weight: 700;
     font-size: 1.3rem;
-    padding: 0 1.5rem;
+    padding: 1.5rem 1.5rem;
     color: var(--color-primario)
 }
 
