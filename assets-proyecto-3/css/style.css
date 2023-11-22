@@ -2,7 +2,7 @@
 :root {
     --color-primario: #fff;
     --color-secundario: #329153;
---color-bg-navbar:#333946;
+    --color-bg-navbar: #333946;
 }
 
 /* estilos generales */
@@ -77,15 +77,39 @@ body {
     color: var(--color-primario);
     background-color: var(--color-bg-navbar);
 }
+
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.navbar__item {
+    padding: 1.5rem 0;
+}
+.navbar__item:hover {
+    background-color: var(--color-secundario);
+}
+.navbar__link{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    color: var(--color-primario)
+}
+
 /* ******************************************* */
 /* ******************************************* */
 /* ******************************************* */
 /* ******************************************* */
 
-.navbar__submenu{
+.navbar__submenu {
     display: none;
 }
-/* */
+
+/* ******************************************* */
+/* ******************************************* */
+/* ******************************************* */
+/* ******************************************* */
 /* estilos marquesina */
 .layout__marquee {
     grid-area: marquee;
